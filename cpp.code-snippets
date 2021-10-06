@@ -42,7 +42,7 @@
 
 			"${1:Sample}::~${1:Sample}() {}\n",
 
-			"${1:Sample}&\t${1:Sample}::operator=(const ${1:Sample} &src) {}\n",
+			"${1:Sample}&\t${1:Sample}::operator=(const ${1:Sample} &src) {}\n"
 
 		],
 		"description": "Basic Class Source Snippet"
