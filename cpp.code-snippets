@@ -1,0 +1,63 @@
+{
+	"Class Header Snippet": {
+		"prefix": ["basicClassHeader"],
+		"body": [
+
+			"class ${1:Sample} {\n",
+
+			"\tprivate:\n",
+
+				"\t\t// Attributes",
+			"",
+				"\t\t// Internal functions",
+			"",
+			"\tpublic:\n",
+
+				"\t\t// Constructors and destructor",
+				"\t\t${1:Sample}(${2:void});",
+				"\t\t${1:Sample}(const ${1:Sample} &src);",
+				"\t\t~${1:Sample}();",
+			"",
+				"\t\t// Operator overloads",
+				"\t\t${1:Sample}&\toperator=(const ${1:Sample} &src);",
+			"",
+				"\t\t// Member functions",
+			"",
+
+			
+			"};"
+		],
+		"description": "Basic Class Header Snippet"
+	},
+
+	"Class Source Snippet": {
+		"prefix": ["basicClassSource"],
+		"body": [
+
+			"#include \"${1:Sample}.hpp\"\n",
+
+			"${1:Sample}::${1:Sample}(void) {}\n",
+
+			"${1:Sample}::${1:Sample}(const ${1:Sample} &src) {}\n",
+
+			"${1:Sample}::~${1:Sample}() {}\n",
+
+			"${1:Sample}&\t${1:Sample}::operator=(const ${1:Sample} &src) {}\n",
+
+		],
+		"description": "Basic Class Source Snippet"
+	},
+
+	"Inclusion Protection": {
+		"prefix": ["inclusionProtection"],
+		"body": [
+			"#ifndef ${1:FILENAME}_HPP",
+			"# define ${1:FILENAME}_HPP",
+			"",
+			"",
+			"",
+			"#endif // ${1:FILENAME}_HPP\n"
+		],
+		"description": "Double inclusion protection for cpp headers"
+	}
+}
